@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vip Fit Academia - Bairro Alto, Curitiba.">
+    <title>Vip Fit Academia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo">
+
+    <div class="logo" onclick="mostrarPagina('inicio')">
+        <div class="logo-icone"><img src="img/logo-vipfit.jfif" alt="Logo Vip Fit"></div>
+
+        <div class="logo-textos">
+            <span class="logo-nome">VIP FIT</span>
+            <span class="logo-slogan">Academia • Bairro Alto</span>
+        </div>
+    </div>
+
+    <button class="menu-mobile" onclick="alternarMenu()" aria-label="Abrir menu">☰</button>
+
+    <nav id="menuPrincipal">
+        <ul>
+            <li><a onclick="mostrarPagina('inicio', this)" class="ativo">Início</a></li>
+            <li><a onclick="mostrarPagina('modalidades', this)">Modalidades</a></li>
+            <li><a onclick="mostrarPagina('estrutura', this)">A Academia</a></li>
+            <li><a onclick="mostrarPagina('horarios', this)">Horários</a></li>
+            <li><a onclick="mostrarPagina('contato', this)">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div id="inicio" class="pagina ativa">
+
+    <section class="hero">
+
+        <div class="luz luz-1"></div>
+        <div class="luz luz-2"></div>
+        <div class="luz luz-3"></div>
+
+        <div class="hero-conteudo">
+
+            <div class="hero-texto">
+                <span class="selo">ACADEMIA • BAIRRO ALTO</span>
+
+                <h1>
+                    SEU TREINO.<br>
+                    <span>SEU MOMENTO.</span>
+                </h1>
+
+                <p>
+                    Um espaço para treinar, evoluir e cuidar de você.
+                    Modalidades, acompanhamento e uma rotina que combina com seus objetivos.
+                </p>
+
+                <div class="hero-botoes">
+                    <a class="btn btn-branco" onclick="mostrarPagina('contato')">
+                        Falar com a Vip Fit
+                    </a>
+
+                    <a class="btn btn-transparente" onclick="mostrarPagina('modalidades')">
+                        Ver modalidades
+                    </a>
+                </div>
+
+                <div class="hero-numeros">
+
+                    <div>
+                        <strong>06h–22h</strong>
+                        <span>Segunda a sexta</span>
+                    </div>
+
+                    <div>
+                        <strong>5+</strong>
+                        <span>Modalidades</span>
+                    </div>
+
+                    <div>
+                        <strong>Bairro Alto</strong>
+                        <span>Curitiba • PR</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hero-card">
+
+                <div class="hero-card-topo">
+                    <span>VIP FIT</span>
+                    <span class="online"></span>
+                </div>
+
+                <div class="hero-foto">
+                    <img src="img/academia-principal.jfif" alt="Academia Vip Fit">
+                </div>
+
+                <div class="hero-card-corpo">
+                    <div class="circulo-logo"><img src="img/logo-vipfit.jfif" alt="Logo Vip Fit"></div>
+
+                    <h2>Treine no seu ritmo.</h2>
+
+                    <p>
+                        Uma academia próxima de você, com ambiente leve,
+                        energia e opções para diferentes objetivos.
+                    </p>
+
+                    <div class="mini-cards">
+                        <span>Musculação</span>
+                        <span>Jiu-Jitsu</span>
+                        <span>Boxe</span>
+                        <span>Muay Thai</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <main class="inicio-conteudo">
+
+        <section class="intro">
+
+            <div class="intro-texto">
+                <span class="subtitulo">MAIS QUE TREINO</span>
+
+                <h2>
+                    Uma academia feita para
+                    <span class="azul">movimentar sua rotina.</span>
+                </h2>
+
+                <p>
+                    A Vip Fit reúne treino, proximidade e praticidade em um ambiente
+                    pensado para quem quer manter constância e cuidar da saúde.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="vantagens">
+
+            <article class="vantagem-card">
+                <div class="vantagem-numero">01</div>
+                <h3>Treino para diferentes objetivos</h3>
+                <p>Força, resistência, mobilidade, condicionamento e qualidade de vida.</p>
+            </article>
+
+            <article class="vantagem-card">
+                <div class="vantagem-numero">02</div>
+                <h3>Ambiente próximo e acolhedor</h3>
+                <p>Uma academia de bairro com experiência mais próxima do aluno.</p>
+            </article>
+
+            <article class="vantagem-card">
+                <div class="vantagem-numero">03</div>
+                <h3>Horários para sua rotina</h3>
+                <p>Treine cedo, no intervalo do dia ou depois do trabalho e dos estudos.</p>
+            </article>
+
+        </section>
+
+        <section class="chamada">
+
+            <div>
+                <span>PRONTO PARA COMEÇAR?</span>
+                <h2>Conheça a Vip Fit.</h2>
+                <p>Fale com a academia e consulte planos, modalidades e condições disponíveis.</p>
+            </div>
+
+            <a class="btn btn-azul" onclick="mostrarPagina('contato')">
+                Entrar em contato
+            </a>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div id="modalidades" class="pagina">
+
+    <section class="pagina-topo">
+        <div>
+            <span class="subtitulo">TREINE DO SEU JEITO</span>
+            <h1>Modalidades</h1>
+            <p>Opções para diferentes objetivos e estilos de treino.</p>
+        </div>
+    </section>
+
+    <main class="pagina-conteudo">
+
+        <div class="grid-modalidades">
+
+            <article class="modalidade-card">
+                <img class="modalidade-foto" src="img/musculacao.jpg" alt="Musculação">
+                <div class="modalidade-corpo">
+                    <span class="numero">01</span>
+                    <h2>Musculação</h2>
+                    <p>Treinos voltados ao desenvolvimento de força, resistência e evolução física.</p>
+                    <span class="tag">Força</span>
+                </div>
+            </article>
+
+            <article class="modalidade-card">
+                <img class="modalidade-foto" src="img/jiu-jitsu.jpg" alt="Jiu-Jitsu">
+                <div class="modalidade-corpo">
+                    <span class="numero">02</span>
+                    <h2>Jiu-Jitsu</h2>
+                    <p>Treinos que desenvolvem técnica, condicionamento físico, disciplina e confiança.</p>
+                    <span class="tag">Arte Marcial</span>
+                </div>
+            </article>
+
+            <article class="modalidade-card">
+                <img class="modalidade-foto" src="img/boxe.png" alt="Boxe">
+                <div class="modalidade-corpo">
+                    <span class="numero">03</span>
+                    <h2>Boxe</h2>
+                    <p>Treinos com técnica, agilidade e condicionamento para desenvolver corpo e foco.</p>
+                    <span class="tag">Luta</span>
+                </div>
+            </article>
+
+            <article class="modalidade-card">
+                <img class="modalidade-foto" src="img/muay-thai.png" alt="Muay Thai">
+                <div class="modalidade-corpo">
+                    <span class="numero">04</span>
+                    <h2>Muay Thai</h2>
+                    <p>Treinos voltados à técnica, preparo físico, resistência e condicionamento.</p>
+                    <span class="tag">Luta</span>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="pagina-cta">
+            <div>
+                <span class="subtitulo claro">QUER SABER MAIS?</span>
+                <h2>Fale direto com a Vip Fit.</h2>
+            </div>
+
+            <a class="btn btn-branco" onclick="mostrarPagina('contato')">
+                Ver contato
+            </a>
+        </div>
+
+    </main>
+
+</div>
+
+<div id="estrutura" class="pagina">
+
+    <section class="pagina-topo pagina-topo-claro">
+        <div>
+            <span class="subtitulo">A VIP FIT</span>
+            <h1>Uma academia com energia de bairro.</h1>
+            <p>Próxima, prática e pensada para encaixar na rotina.</p>
+        </div>
+    </section>
+
+    <main class="pagina-conteudo">
+
+        <section class="galeria-academia galeria-vip">
+            <div class="galeria-titulo">
+                <span class="subtitulo">CONHEÇA NOSSO ESPAÇO</span>
+                <h2>Por dentro da Vip Fit</h2>
+                <p>Um pouco da estrutura e do ambiente da academia.</p>
+            </div>
+
+            <div class="galeria-mosaico">
+                <figure class="galeria-item galeria-destaque">
+                    <img src="img/academia-principal.jfif" alt="Área principal da Vip Fit">
+                </figure>
+
+                <figure class="galeria-item">
+                    <img src="img/academia-02.jpg" alt="Espaço interno da Vip Fit">
+                </figure>
+
+                <figure class="galeria-item">
+                    <img src="img/academia-03.jpg" alt="Área de treino da Vip Fit">
+                </figure>
+
+                <figure class="galeria-item">
+                    <img src="img/academia-04.jpg" alt="Estrutura da Vip Fit">
+                </figure>
+
+                <figure class="galeria-item">
+                    <img src="img/academia-05.jpg" alt="Ambiente da academia Vip Fit">
+                </figure>
+            </div>
+        </section>
+
+        <section class="estrutura-grid">
+
+            <div class="estrutura-principal">
+                <span class="subtitulo">NOSSA PROPOSTA</span>
+
+                <h2>
+                    Um ambiente para você
+                    <span class="azul">criar constância.</span>
+                </h2>
+
+                <p>
+                    Mais do que simplesmente treinar, a ideia é ter um espaço em que
+                    você consiga voltar, evoluir e manter uma rotina de atividade física.
+                </p>
+
+                <div class="lista-beneficios">
+
+                    <div>
+                        <span>✓</span>
+                        <p><strong>Variedade de modalidades</strong><br>Escolha o tipo de treino que combina com você.</p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <p><strong>Localização no Bairro Alto</strong><br>Facilidade para quem mora ou circula pela região.</p>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <p><strong>Contato rápido</strong><br>Fale com a academia pelo WhatsApp ou Instagram.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <aside class="estrutura-lateral">
+
+                <div class="painel-info azul-bg">
+                    <span>VIP FIT</span>
+                    <strong>Bairro Alto</strong>
+                    <small>Curitiba • PR</small>
+                </div>
+
+                <div class="painel-info">
+                    <span>SEG A SEX</span>
+                    <strong>06h–22h</strong>
+                    <small>Horário de funcionamento</small>
+                </div>
+
+                <div class="painel-info">
+                    <span>SÁBADO</span>
+                    <strong>08h–12h</strong>
+                    <small>Horário de funcionamento</small>
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+</div>
+
+<div id="horarios" class="pagina">
+
+    <section class="pagina-topo">
+        <div>
+            <span class="subtitulo claro">PLANEJE SEU TREINO</span>
+            <h1>Horários</h1>
+            <p>Veja quando você pode treinar na Vip Fit.</p>
+        </div>
+    </section>
+
+    <main class="pagina-conteudo">
+
+        <section class="horarios-box">
+
+            <div class="horario-linha">
+                <div>
+                    <span>SEGUNDA A SEXTA</span>
+                    <strong>Dias úteis</strong>
+                </div>
+
+                <div class="hora">06:00 — 22:00</div>
+            </div>
+
+            <div class="horario-linha">
+                <div>
+                    <span>SÁBADO</span>
+                    <strong>Final de semana</strong>
+                </div>
+
+                <div class="hora">08:00 — 12:00</div>
+            </div>
+
+            <div class="horario-linha">
+                <div>
+                    <span>DOMINGO</span>
+                    <strong>Final de semana</strong>
+                </div>
+
+                <div class="hora fechado">Fechado</div>
+            </div>
+
+        </section>
+
+        <div class="aviso-horario">
+            Horários exibidos nesta demonstração. Confirme eventuais alterações diretamente com a academia.
+        </div>
+
+    </main>
+
+</div>
+
+<div id="contato" class="pagina">
+
+    <section class="contato-hero">
+
+        <div class="luz luz-1"></div>
+        <div class="luz luz-3"></div>
+
+        <div class="contato-hero-conteudo">
+            <span class="subtitulo claro">FALE COM A VIP FIT</span>
+            <h1>Seu próximo treino pode começar aqui.</h1>
+            <p>Escolha uma das opções abaixo e fale diretamente com a academia.</p>
+        </div>
+
+    </section>
+
+    <main class="pagina-conteudo">
+
+        <section class="contato-grid">
+
+            <a
+                class="social-card whatsapp"
+                href="https://wa.me/554130150575?text=Olá%20Vip%20Fit!%20Gostaria%20de%20saber%20mais%20sobre%20a%20academia."
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div class="social-icone">W</div>
+
+                <div class="social-texto">
+                    <span>WHATSAPP</span>
+                    <strong>(41) 3015-0575</strong>
+                    <small>Clique para iniciar uma conversa</small>
+                </div>
+
+                <div class="social-seta">→</div>
+            </a>
+
+            <a
+                class="social-card instagram"
+                href="https://www.instagram.com/academiavipfit/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div class="social-icone">◎</div>
+
+                <div class="social-texto">
+                    <span>INSTAGRAM</span>
+                    <strong>@academiavipfit</strong>
+                    <small>Acompanhe novidades da academia</small>
+                </div>
+
+                <div class="social-seta">→</div>
+            </a>
+
+        </section>
+
+        <section class="endereco-card">
+
+            <div class="endereco-icone">⌖</div>
+
+            <div>
+                <span>ONDE ESTAMOS</span>
+                <strong>Rua Percy Feliciano de Castilho, 829</strong>
+                <small>Bairro Alto • Curitiba - PR</small>
+            </div>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Percy+Feliciano+de+Castilho+829+Curitiba+PR"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver no mapa →
+            </a>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    <div class="rodape-container">
+
+        <div class="rodape-col">
+            <div class="rodape-logo"><img src="img/logo-vipfit.jfif" alt="Logo Vip Fit"></div>
+            <h3>Vip Fit Academia</h3>
+
+            <p>
+                Academia no Bairro Alto, em Curitiba.
+                Treino, movimento e constância perto de você.
+            </p>
+        </div>
+
+        <div class="rodape-col">
+            <h3>Navegação</h3>
+
+            <ul>
+                <li><a onclick="mostrarPagina('inicio')">Início</a></li>
+                <li><a onclick="mostrarPagina('modalidades')">Modalidades</a></li>
+                <li><a onclick="mostrarPagina('estrutura')">A Academia</a></li>
+                <li><a onclick="mostrarPagina('horarios')">Horários</a></li>
+                <li><a onclick="mostrarPagina('contato')">Contato</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="rodape-bottom">
+        Site demonstrativo não oficial • Vip Fit Academia
+    </div>
+
+</footer>
+
+<script>
+
+    function mostrarPagina(nome, linkClicado) {
+
+        const paginas =
+            document.querySelectorAll(".pagina");
+
+        paginas.forEach(function(pagina) {
+            pagina.classList.remove("ativa");
+        });
+
+        const paginaEscolhida =
+            document.getElementById(nome);
+
+        if (paginaEscolhida) {
+            paginaEscolhida.classList.add("ativa");
+        }
+
+        const linksMenu =
+            document.querySelectorAll("#menuPrincipal a");
+
+        linksMenu.forEach(function(link) {
+            link.classList.remove("ativo");
+        });
+
+        linksMenu.forEach(function(link) {
+
+            const comando =
+                link.getAttribute("onclick");
+
+            if (
+                comando &&
+                comando.includes("'" + nome + "'")
+            ) {
+                link.classList.add("ativo");
+            }
+
+        });
+
+        document.getElementById("menuPrincipal").classList.remove("aberto");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+    function alternarMenu() {
+        document
+            .getElementById("menuPrincipal")
+            .classList
+            .toggle("aberto");
+    }
+
+</script>
+
+</body>
+</html>
